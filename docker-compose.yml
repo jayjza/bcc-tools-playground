@@ -1,0 +1,13 @@
+version: "3.4"
+
+services:
+  bcc-env:
+    volumes:
+      - ./custom-bcc-tools:/bcc-playground/custom-bcc-tools
+    network_mode: "host"
+    container_name: bcc-playground
+    image: bcc-playground
+    build:
+      context: .
+      dockerfile: Dockerfile
+    
