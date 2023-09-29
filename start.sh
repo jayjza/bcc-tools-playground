@@ -4,4 +4,4 @@ sudo docker run -ti --rm\
     --network=host \
     --privileged \
     -v /etc/localtime:/etc/localtime:ro \
-    -v /Users/jay/Work/hackdays/bcc-tools-docker/custom-bcc-tools:/bcc-playground/custom-bcc-tools bcc-playground
+    -v ./custom-bcc-tools:/bcc-playground/custom-bcc-tools bcc-playground
